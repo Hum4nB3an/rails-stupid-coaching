@@ -1,0 +1,11 @@
+<%= link_to "Ask your question", ask_path %>
+
+<%def coach_answer(my_question)%>
+  <%if my_question == "i am going to work"%>
+    <%="Great!"%>
+  <%elsif my_message.end_with?("?")%>
+    <%="Silly question, get dressed and go to work!"%>
+  <%else%>
+    <%="I don't care, get dressed and go to work!"%>
+  <%end%>
+<%end%>
